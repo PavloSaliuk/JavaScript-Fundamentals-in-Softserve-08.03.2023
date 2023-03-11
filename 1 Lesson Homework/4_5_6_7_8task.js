@@ -61,3 +61,10 @@
 
 // 8. 
 // Напишіть скрипт, який вираховує кількість секунд в годині, в добі, в місяці, записує результати в відповідні змінні, і виводить їх значення на екран
+
+const secondsInHour = 60*60;
+const secondsInDay = secondsInHour * 24;
+const secondsInMonth = secondsInDay * 30;
+alert(secondsInHour + " seconds in a hour");
+alert(secondsInDay + " seconds in a day");
+alert(secondsInMonth + " seconds in a month");

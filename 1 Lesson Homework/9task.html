@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="9task.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Створіть веб-додаток для визначення купе в плацкартному вагоні за номером квитка. Користувач вводить номер місця, вивести йому номер купе, тип місця - бічне чи ні, верхнє чи нижнє. -->
+    <section class="ticket__verification">
+        <h1>Ведіть номер Вашого місця</h1>
+            <input type="number" min="1" max="54" id="placeNumber" placeholder="Number of ticket" />
+            <button onclick="findCompartment()">Номер купе і тип місця</button>
+        <div id="result"></div>
+    </section>
+    <script src="9task.js"></script>
+</body>
+
+</html>
