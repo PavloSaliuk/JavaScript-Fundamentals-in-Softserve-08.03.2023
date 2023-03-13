@@ -5,7 +5,7 @@
 // let a;
 // let b;
 // let c;
-// let statements  = (a < b < c)  ? console.log("is true") : console.log("is false");
+// let statements  = (a < b && b < c)  ? console.log("is true") : console.log("is false");
 
 // 2. 
 // Є такий код:
