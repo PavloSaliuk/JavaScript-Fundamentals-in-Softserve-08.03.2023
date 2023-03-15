@@ -81,7 +81,7 @@
 // let perimeter = (lengthOne + lengthTwo + lengthThird) / 2;
 // let areaTriangle = Math.sqrt(perimeter * (perimeter - lengthOne) * (perimeter - lengthTwo) * (perimeter - lengthThird));
 // if (isNaN(lengthOne) || isNaN(lengthTwo) || isNaN(lengthThird) ||
-//     lengthOne <= 0 || lengthTwo <= 0 || lengthThird <= 0) {
+//     lengthOne <= 0 || lengthTwo <= 0 || lengthThird <= 0 || (lengthOne + lengthTwo) < lengthThird || (lengthTwo + lengthThird) < lengthOne ||(lengthThird + lengthOne) < lengthTwo){
 //     console.log("Incorrect data")
 // } 
 // if (lengthOne * lengthOne + lengthTwo * lengthTwo === lengthThird * lengthThird ||
