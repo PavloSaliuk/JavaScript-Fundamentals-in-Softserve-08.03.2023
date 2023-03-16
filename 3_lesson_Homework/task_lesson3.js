@@ -80,15 +80,15 @@
 //     let arrNumber = [];
 //     let arrString = [];
 //     for (let i = 0; i < arr.length; i++) {
-//         if (typeof arr[i] === 'number') {
+//         if (typeof arr[i] === "number") {
 //             arrNumber.push(arr[i]);
-//         } else if (typeof arr[i] === 'string') {
+//         } else if (typeof arr[i] === "string") {
 //             arrString.push(arr[i]);
 //         } else if (Array.isArray(arr[i])) {
 //             for (let j = 0; j < arr[i].length; j++) {
-//                 if (typeof arr[i][j] === 'number') {
+//                 if (typeof arr[i][j] === "number") {
 //                     arrNumber.push(arr[i][j]);
-//                 } else if (typeof arr[i][j] === 'string') {
+//                 } else if (typeof arr[i][j] === "string") {
 //                     arrString.push(arr[i][j]);
 //                 }
 //             }
