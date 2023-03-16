@@ -59,7 +59,7 @@
 //     }
 // }
 
-//4 використав promp щоб користувач сам вводив скільки чисел хоче отримати
+//4 використав prompt щоб користувач сам вводив скільки чисел хоче отримати
 
 // function randArray(k) {
 //     let arr = [];
@@ -73,3 +73,65 @@
 // }
 // let arr = randArray(k);
 // console.log(arr);
+
+//5
+
+// function funcName(arr) {
+//     let arrNumber = [];
+//     let arrString = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (typeof arr[i] === 'number') {
+//             arrNumber.push(arr[i]);
+//         } else if (typeof arr[i] === 'string') {
+//             arrString.push(arr[i]);
+//         } else if (Array.isArray(arr[i])) {
+//             for (let j = 0; j < arr[i].length; j++) {
+//                 if (typeof arr[i][j] === 'number') {
+//                     arrNumber.push(arr[i][j]);
+//                 } else if (typeof arr[i][j] === 'string') {
+//                     arrString.push(arr[i][j]);
+//                 }
+//             }
+//         }
+//     }
+//     return [arrNumber, arrString];
+// }
+// let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+// let arrNew = funcName(arr);
+// console.log(arrNew);
+
+// 6 всі числа вводяться черезе prompt і перевіряються на коректність
+
+// let a = parseInt(prompt("Введіть перше число"));
+// if (isNaN(a)) {
+//     console.log("Введіть коректно перше число");
+// }
+// let b = parseInt(prompt("Введіть друге число"));
+// if (isNaN(b)) {
+//     console.log("Введіть коректно друге число");
+// }
+// let op = parseInt(prompt("Введіть третє число"));
+// if (isNaN(op)) {
+//     console.log("Введіть коректно третє число");
+// }
+// function calc(a, b, op) {
+//     switch (op) {
+//         case 1:
+//             return a - b;
+//         case 2:
+//             return a * b;
+//         case 3:
+//             return a / b;
+//         default:
+//             return a + b;
+//     }
+// } console.log(calc(a, b, op));
+
+// 7
+
+// function findUnique(arr) {
+//     const uniqueSet = new Set(arr);
+//     return uniqueSet.size === arr.length;
+// }
+// console.log(findUnique([1,2,3,4,5,6]));
+// console.log(findUnique([1,2,3,4,5,5]));
