@@ -16,19 +16,17 @@
 // console.log(arr3);
 
 // 2 Додатково задав щоб числа start i end користувач сам вводив і перевірку
-
+// let start = parseInt(prompt("Введіть початкове число масиву"));
+// if (isNaN(start)) {
+//     console.log("Введіть коректно початкове число");
+// }
+// let end = parseInt(prompt("Введіть кінцеве число масиву"));
+// if (isNaN(end)) {
+//     console.log("Введіть коректно кінцеве число")
+// } else if (start > end) {
+//     console.log("Число start має бути менше за end");
+// }
 // function creteArray() {
-//     let start = parseInt(prompt("Введіть початкове число масиву"));
-//     if (isNaN(start)) {
-//         console.log("Введіть коректно початкове число");
-//     }
-//     let end = parseInt(prompt("Введіть кінцеве число масиву"));
-//     if (isNaN(end)) {
-//         console.log("Введіть коректно кінцеве число")
-//     } else if (start > end) {
-//         console.log("Число start має бути менше за end");
-//     }
-
 //     let arr = [];
 //     for (let i = start; i <= end; i++) {
 //         arr.push(i)
@@ -64,7 +62,7 @@
 // function randArray(k) {
 //     let arr = [];
 //     for (let i = 0; i < k; i++) {
-//         arr.push(Math.floor(Math.random() * 500) +1);        
+//         arr.push(Math.floor(Math.random() * 500) +1);
 //     } return arr;
 // }
 // let k = parseInt(prompt("Введіть  число яке = кількість випадкових чисел від 0 до 500"));
