@@ -135,3 +135,12 @@
 // console.log(findUnique([1,2,3,4,5,5]));
 
 // 8
+
+// function create(password) {
+//     return function(input) {
+//         return input === password;
+//     }
+// }
+
+// const tom = create("pass_for_Tom");
+// console.log(tom("pass_for_Tom"));
