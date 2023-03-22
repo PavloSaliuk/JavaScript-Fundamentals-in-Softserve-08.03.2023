@@ -103,7 +103,7 @@
 
 // let arr2 = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
 // function funcName2(arr2) {
-//     let newArr2 = [...arr2].flat(2);
+//     let newArr2 = arr2.flat(2);
 //     let arrNumbers2 = newArr2.filter((elem) => {
 //         return typeof elem === "number";
 //     });
