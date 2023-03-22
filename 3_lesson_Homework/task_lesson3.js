@@ -152,7 +152,7 @@
 // console.log(findUnique([1, 2, 3, 4, 5, 5]));
 
 // 8
-
+    
 // function create(password) {
 //     return function (input) {
 //         return input === password;
