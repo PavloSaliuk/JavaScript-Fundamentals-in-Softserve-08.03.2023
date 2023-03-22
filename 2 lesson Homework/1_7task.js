@@ -78,8 +78,8 @@
 // let lengthOne = parseFloat(prompt("Enter length of 1 side"));
 // let lengthTwo = parseFloat(prompt("Enter length of 2 side"));
 // let lengthThird = parseFloat(prompt("Enter length of 3 side"));
-// let perimeter = (lengthOne + lengthTwo + lengthThird) / 2;
-// let areaTriangle = Math.sqrt(perimeter * (perimeter - lengthOne) * (perimeter - lengthTwo) * (perimeter - lengthThird));
+// let halfPerimeter = (lengthOne + lengthTwo + lengthThird) / 2;
+// let areaTriangle = Math.sqrt(halfPerimeter * (halfPerimeter - lengthOne) * (halfPerimeter - lengthTwo) * (halfPerimeter - lengthThird));
 // if (isNaN(lengthOne) || isNaN(lengthTwo) || isNaN(lengthThird) ||
 //     lengthOne <= 0 || lengthTwo <= 0 || lengthThird <= 0 || (lengthOne + lengthTwo) < lengthThird || (lengthTwo + lengthThird) < lengthOne ||(lengthThird + lengthOne) < lengthTwo){
 //     console.log("Incorrect data")

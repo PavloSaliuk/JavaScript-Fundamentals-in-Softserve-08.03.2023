@@ -9,6 +9,8 @@
 // const arr2 = compact(arr);
 // console.log(arr2);
 
+// // або 
+
 // function compact2(arr) {
 //     return Array.from(new Set(arr));
 // }
@@ -37,7 +39,7 @@
 // let arr = creteArray(0, 10);
 // console.log(arr);
 
-//3 Додатково перевірив числа вводимо
+// 3 Додатково перевірив числа вводимо
 
 // let a = parseInt(prompt("Введіть  число a"));
 // if (isNaN(a)) {
@@ -57,22 +59,21 @@
 //     }
 // }
 
-//4 використав prompt щоб користувач сам вводив скільки чисел хоче отримати
-
-// function randArray(k) {
-//     let arr = [];
-//     for (let i = 0; i < k; i++) {
-//         arr.push(Math.floor(Math.random() * 500) +1);
-//     } return arr;
-// }
+// 4 використав prompt щоб користувач сам вводив скільки чисел хоче отримати
 // let k = parseInt(prompt("Введіть  число яке = кількість випадкових чисел від 0 до 500"));
 // if (isNaN(k)) {
 //     console.log("Введіть коректно число");
 // }
+// function randArray(k) {
+//     let arr = [];
+//     for (let i = 0; i < k; i++) {
+//         arr.push(Math.floor(Math.random() * 500) + 1);
+//     } return arr;
+// }
 // let arr = randArray(k);
 // console.log(arr);
 
-//5
+// 5
 
 // function funcName(arr) {
 //     let arrNumber = [];
@@ -97,6 +98,22 @@
 // let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
 // let arrNew = funcName(arr);
 // console.log(arrNew);
+
+// Або
+
+// let arr2 = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+// function funcName2(arr2) {
+//     let newArr2 = [...arr2].flat(2);
+//     let arrNumbers2 = newArr2.filter((elem) => {
+//         return typeof elem === "number";
+//     });
+//     let arrString2 = newArr2.filter((elem) => {
+//         return typeof elem === "string";
+//     });
+//     return [arrNumbers2, arrString2]
+// }
+// let arrNew2 = funcName2(arr2);
+// console.log(arrNew2);
 
 // 6 всі числа вводяться черезе prompt і перевіряються на коректність
 
@@ -131,13 +148,13 @@
 //     const uniqueSet = new Set(arr);
 //     return uniqueSet.size === arr.length;
 // }
-// console.log(findUnique([1,2,3,4,5,6]));
-// console.log(findUnique([1,2,3,4,5,5]));
+// console.log(findUnique([1, 2, 3, 4, 5, 6]));
+// console.log(findUnique([1, 2, 3, 4, 5, 5]));
 
 // 8
 
 // function create(password) {
-//     return function(input) {
+//     return function (input) {
 //         return input === password;
 //     }
 // }
