@@ -1,12 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/digital-7-mono');
+
 .myClock {
     width: 400px;
     height: 200px;
     display: flex;
-    margin: auto;
-    overflow: clip;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     color: rgb(255, 244, 0);
     background-color: rgb(0, 0, 0);
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    font-family: 'Digital-7 Mono', sans-serif;
+    font-family: 'Digital-7', sans-serif;
+    font-family: 'Digital-7 Italic', sans-serif;
+}
+
+.clockup {
+    font-size: 1.5em;
+}
+.clockdown {
+    font-size: 5em;
 }

@@ -12,9 +12,10 @@ function displayTime() {
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
-    const timeMOnth = `${month} ${day}`;
-    const timeHour = `<br> ${hours}:${minutes}:${seconds}`;
+    const timeMonth = `${month} ${day}`;
+    const timeHour = `${hours}:${minutes}:${seconds}`;
 
-    document.getElementById("clock").innerHTML = timeMOnth + timeHour;
+    document.getElementById("clockup").innerHTML = timeMonth ;
+    document.getElementById("clockdown").innerHTML = timeHour;
 }
 setInterval(displayTime, 1000)
