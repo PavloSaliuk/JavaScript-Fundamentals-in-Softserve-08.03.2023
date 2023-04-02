@@ -79,3 +79,41 @@
 // console.log(checkLogin("ee1r2et3"));
 
 // 7
+// const fullName = document.getElementById("fullName")
+// const email = document.getElementById("email")
+// const phone = document.getElementById("phone")
+// const password = document.getElementById("password")
+// const confirmPassword = document.getElementById("confirmPassword")
+// const checkbox = document.getElementById("flexCheckDefault")
+// const submit = document.getElementById("createAccount")
+
+// const fullNameRegex = /^[a-zA-Z]{2,}\s[a-zA-Z]{2,}$/;
+// const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// const phoneRegex = /^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$/;
+// const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.[A-Z])[0-9a-zA-Z]{8,}$/;
+// const confirmPasswordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+
+// function validateForm(event) {
+//     event.preventDefault();
+//     if (!fullNameRegex.test(fullName.value)) {
+//         alert("Please enter your full name in the correct format");
+//         return;
+//     }
+//     if (!emailRegex.test(email.value)) {
+//         alert("Please enter a valid email address")
+//         return;
+//     }
+//     if (!phoneRegex.test(phone.value)) {
+//         alert("Please enter a valid phone number")
+//         return;
+//     }
+//     if(!passwordRegex.test(password.value)) {
+//         alert("Please enter a valid password")
+//         return;
+//     }
+//     if(!confirmPasswordRegex.test(confirmPassword.value)) {
+//         alert("Please enter a valid password")
+//         return false;
+//     }
+//     submit.submit();
+// }
