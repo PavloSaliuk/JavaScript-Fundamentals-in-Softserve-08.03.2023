@@ -115,5 +115,4 @@
 //         alert("Please enter a valid password")
 //         return false;
 //     }
-//     submit.submit();
 // }
