@@ -50,3 +50,32 @@
 // console.log(validate("1234-4567-890111123"));
 
 // 5
+// function checkEmail(email) {
+//     const details = /^[A-Za-z0-9][A-aZ-z0-9_\-\.]*[A-aZ-z0-9]([_\-\.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([\.-][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$/;
+
+//     if (details.test(email)) {
+//         return "Email is correct!"
+//     } else {
+//         return "Email is not correct!"
+//     }
+// }
+
+// console.log(checkEmail('my_mail@gmail.com'));
+// console.log(checkEmail('#my_mail@gmail.com'));
+// console.log(checkEmail('my_ma--il@gmail.com'));
+
+// 6
+// const checkLogin = (login) => {
+//     const numbers = login.match(/[\d.]+/g);
+//     const loginRegex = /^[a-zA-Z][a-zA-Z0-9]{1,9}$/;
+//     if(!loginRegex.test(login)){
+//         return `false\n //${numbers ? numbers.join(", ") : ""}`
+//     }
+//     return `true\n //${numbers ? numbers.join(", ") : ""}`;
+// }
+
+// console.log(checkLogin("ee1.1ret3"));
+// console.log(checkLogin("ee1*1ret3"));
+// console.log(checkLogin("ee1r2et3"));
+
+// 7
