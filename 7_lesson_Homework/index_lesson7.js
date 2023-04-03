@@ -98,11 +98,9 @@
 
 // const widthElement = document.createElement("span");
 // widthElement.id = "width"
-// widthElement.textContent = "Width: "
+// document.body.appendChild(widthElement);
 // const heigtElement = document.createElement("span");
 // heigtElement.id = "height"
-// heigtElement.textContent = "Height: "
-// document.body.appendChild(widthElement);
 // document.body.appendChild(heigtElement);
 
 // window.onresize = function (event) {
@@ -110,33 +108,43 @@
 //     document.getElementById("height").textContent = `Height: ${window.innerHeight}`;
 // };
 
+
+// const output = document.querySelector(".output")
+// function windowResize() {
+//     const width = window.innerWidth;
+//     const height = window.innerHeight;
+//     output.textContent = `Width: ${width} Heigth: ${height}`
+// }
+// windowResize();
+// window.addEventListener("resize", windowResize);
+
 // 7
 
-// const citiesByCountry = {
-//     germany: ["Berlin", "Amberg", "Frankfurt", "Aachen"],
-//     usa: ["New York", "Washington", "Boston", "Chikago"],
-//     ukraine: ["Kyiv", "Lviv", "Odessa", "Mariupol"]
-// };
-// const countrySelect = document.getElementById("country");
-// const citySelect = document.getElementById("cities");
-// const selected = document.getElementById("selected");
+const citiesByCountry = {
+    germany: ["Berlin", "Amberg", "Frankfurt", "Aachen"],
+    usa: ["New York", "Washington", "Boston", "Chikago"],
+    ukraine: ["Kyiv", "Lviv", "Odessa", "Mariupol"]
+};
+const countrySelect = document.getElementById("country");
+const citySelect = document.getElementById("cities");
+const selected = document.getElementById("selected");
 
-// countrySelect.addEventListener("change", updateCities)
-// citySelect.addEventListener("change", () => {
-//     selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`
-// })
+countrySelect.addEventListener("change", updateCities)
+citySelect.addEventListener("change", () => {
+    selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`
+})
 
-// function updateCities() {
-//     const selectedCountry = countrySelect.options[countrySelect.selectedIndex].dataset.country;
-//     const cities = citiesByCountry[selectedCountry];
+function updateCities() {
+    const selectedCountry = countrySelect.options[countrySelect.selectedIndex].dataset.country;
+    const cities = citiesByCountry[selectedCountry];
 
-//     citySelect.textContent = "";
-//     for (let i = 0; i < cities.length; i++) {
-//         const city = cities[i];
-//         const option = document.createElement("option");
-//         option.textContent = city;
-//         option.value = city;
-//         citySelect.appendChild(option);
-//     }
-//     selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`;
-// }
+    citySelect.textContent = "";
+    for (let i = 0; i < cities.length; i++) {
+        const city = cities[i];
+        const option = document.createElement("option");
+        option.textContent = city;
+        option.value = city;
+        citySelect.appendChild(option);
+    }
+    selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`;
+}
