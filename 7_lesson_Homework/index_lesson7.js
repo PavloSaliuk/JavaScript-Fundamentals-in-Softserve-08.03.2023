@@ -37,25 +37,29 @@
 // const button2 = document.querySelector("#button2")
 // const button3 = document.querySelector("#button3")
 // const link = document.querySelector("#link")
-
+// function changeBackgroundColor(color) {
+//     document.body.style.background = color;
+// }
 // button1.addEventListener("click", () => {
-//     body.style.backgroundColor = "blue";
+//     changeBackgroundColor("blue");
 // })
 // button2.addEventListener("dblclick", () => {
-//     body.style.backgroundColor = "pink";
+//     changeBackgroundColor("pink");
 // })
 // button3.addEventListener("mousedown", () => {
-//     body.style.backgroundColor = "brown";
+//     changeBackgroundColor("brown");
 // })
 // button3.addEventListener("mouseup", () => {
-//     body.style.backgroundColor = "white";
+//     changeBackgroundColor("white");
 // })
 // link.addEventListener("mouseenter", () => {
-//     body.style.backgroundColor = "yellow";
+//     changeBackgroundColor("yellow");
 // })
 // link.addEventListener("mouseup", () => {
-//     body.style.backgroundColor = "white";
+//     changeBackgroundColor("white");
 // })
+
+
 
 // 4
 // const button = document.getElementById("myButton");
@@ -69,17 +73,26 @@
 // const button = document.getElementById("button")
 // const textBelow = document.querySelector("div")
 // button.addEventListener("click", () => {
-//     const text = "I was pressed!<br>";
-//     textBelow.innerHTML += `${text}`
+//     textBelow.innerHTML += "I was pressed!<br>"
 // })
 // button.addEventListener("mouseover", () => {
-//     const text = "Mouse on me!<br>";
-//     textBelow.innerHTML += `${text}`
+//     textBelow.innerHTML += "Mouse on me!<br>"
 // })
 // button.addEventListener("mouseout", () => {
-//     const text = "Mouse is not on me!<br>";
-//     textBelow.innerHTML += `${text}`
+//     textBelow.innerHTML += "Mouse is not on me!<br>"
 // })
+
+
+// const button = document.getElementById("button")
+// const textBelow = document.querySelector("div")
+// button.addEventListener("click", () => setText("I was pressed!"));
+// button.addEventListener("mouseover", () => setText("Mouse on me!"));
+// button.addEventListener("mouseout", () => setText("Mouse is not on me!"));
+// textBelow.addEventListener("click", clearFunc);
+// function setText(text) {
+//     textBelow.innerHTML += `${text}<br>`
+// }
+
 
 // 6
 
