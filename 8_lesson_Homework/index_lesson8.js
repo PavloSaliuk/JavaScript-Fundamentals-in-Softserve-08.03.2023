@@ -116,3 +116,25 @@
 //         return false;
 //     }
 // }
+
+//8 
+// const inData = "user.name.firstname=Bob&user.name.lastname=Smith&user.favoritecolor=Light%20Blue&experiments.theme=dark";
+// const parsedData = {};
+// const parts = inData.split("&");
+// for (let i = 0; i < parts.length; i++) {
+//     const [key, value] = parts[i].split('=');
+//     const keys = key.split(".");
+//     let obj = parsedData;
+//     for (let j = 0; j < keys.length; j++) {
+//         const prop = keys[j];
+//         if (!obj[prop]) {
+//             obj[prop] = {};
+//         }
+//         if (j === keys.length - 1) {
+//             obj[prop] = decodeURIComponent(value)
+//         } else {
+//             obj = obj[prop];
+//         }
+//     }
+// }
+// console.log(parsedData);
