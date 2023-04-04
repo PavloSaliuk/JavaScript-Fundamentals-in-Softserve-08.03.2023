@@ -120,31 +120,25 @@
 
 // 7
 
-const citiesByCountry = {
-    germany: ["Berlin", "Amberg", "Frankfurt", "Aachen"],
-    usa: ["New York", "Washington", "Boston", "Chikago"],
-    ukraine: ["Kyiv", "Lviv", "Odessa", "Mariupol"]
-};
-const countrySelect = document.getElementById("country");
-const citySelect = document.getElementById("cities");
-const selected = document.getElementById("selected");
+// const citiesByCountry = {
+//     germany: ["Berlin", "Amberg", "Frankfurt", "Aachen"],
+//     usa: ["New York", "Washington", "Boston", "Chikago"],
+//     ukraine: ["Donetsk", "Herson", "Lugansk", "Mariupol"]
+// };
+// const countrySelect = document.getElementById("country");
+// const citySelect = document.getElementById("cities");
+// const selected = document.getElementById("selected");
 
-countrySelect.addEventListener("change", updateCities)
-citySelect.addEventListener("change", () => {
-    selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`
-})
+// countrySelect.addEventListener("change", updateCities)
+// citySelect.addEventListener("change", () => {
+//     selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`
+// })
 
-function updateCities() {
-    const selectedCountry = countrySelect.options[countrySelect.selectedIndex].dataset.country;
-    const cities = citiesByCountry[selectedCountry];
+// function updateCities() {
+//     const selectedCountry = countrySelect.options[countrySelect.selectedIndex].dataset.country;
+//     const cities = citiesByCountry[selectedCountry];
 
-    citySelect.textContent = "";
-    for (let i = 0; i < cities.length; i++) {
-        const city = cities[i];
-        const option = document.createElement("option");
-        option.textContent = city;
-        option.value = city;
-        citySelect.appendChild(option);
-    }
-    selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`;
-}
+//     citySelect.innerHTML = cities.map(city => `<option value="${city}">${city}</option>`).join('');
+
+//     selected.textContent = `${countrySelect.options[countrySelect.selectedIndex].text}, ${citySelect.options[citySelect.selectedIndex].text}`;
+// }

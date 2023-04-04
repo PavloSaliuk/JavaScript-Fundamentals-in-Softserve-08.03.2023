@@ -16,10 +16,12 @@
 //     const check1 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 //     return check1.test(email);
 // }
+
 // function emailCheck2(email) {
 //     const check2 = /^[a-zA-z0-9._-]+@[a-zA-z0-9._-]+.[a-zA-z]{2,}$/;
 //     return check2.test(email);
 // }
+
 // function emailCheck3(email) {
 //     const check3 = /^\S+@\S+\.\S+$/;
 //     return check3.test(email);
@@ -51,7 +53,8 @@
 
 // 5
 // function checkEmail(email) {
-//     const details = /^[A-Za-z0-9][A-aZ-z0-9_\-\.]*[A-aZ-z0-9]([_\-\.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([\.-][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$/;
+//     const details = /^[A-Za-z0-9]+([_-](?![_-])|[A-Za-z0-9])*@[A-Za-z0-9]+([-]([A-Za-z0-9]+(?!-))?|[A-Za-z0-9])*(\.[A-Za-z]{2,})+$/
+//     ;
 
 //     if (details.test(email)) {
 //         return "Email is correct!"
@@ -66,8 +69,8 @@
 
 // 6
 // const checkLogin = (login) => {
-//     const numbers = login.match(/[\d.]+/g);
-//     const loginRegex = /^[a-zA-Z][a-zA-Z0-9]{1,9}$/;
+//     const numbers = login.match(/\d.+(\.\d+)?/g);
+//     const loginRegex = /^[a-zA-Z][a-zA-Z0-9\.]{1,9}$/;
 //     if(!loginRegex.test(login)){
 //         return `false\n //${numbers ? numbers.join(", ") : ""}`
 //     }
@@ -76,7 +79,7 @@
 
 // console.log(checkLogin("ee1.1ret3"));
 // console.log(checkLogin("ee1*1ret3"));
-// console.log(checkLogin("ee1r2et3"));
+// console.log(checkLogin("ee1,2et3"));
 
 // 7
 // const fullName = document.getElementById("fullName")
@@ -117,7 +120,7 @@
 //     }
 // }
 
-//8 
+//8
 // const inData = "user.name.firstname=Bob&user.name.lastname=Smith&user.favoritecolor=Light%20Blue&experiments.theme=dark";
 // const parsedData = {};
 // const parts = inData.split("&");
