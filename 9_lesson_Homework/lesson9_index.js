@@ -14,14 +14,11 @@
 // });
 
 // 4
-// $(document).ready(function () {
-//     const checkboxes = $("input[type='checkbox']");
-//     checkboxes.on("change", function () {
-//         const checkedCount = checkboxes.filter(":checked").length;
-//         if (checkedCount >= 3) {
-//             checkboxes.not(":checked").prop("disabled", true);
-//         } else {
-//             checkboxes.prop("disabled", false);
-//         }
-//     });
+
+// const $checkboxes = $("input[type='checkbox']");
+// $checkboxes.change(function () {
+//     const $checked_checkboxes = $checkboxes.filter(":checked");
+//     if ($checked_checkboxes.length >= 3) {
+//         $checkboxes.prop("disabled", true)
+//     }
 // });
