@@ -4,8 +4,15 @@
 //     $("h2.head").find(".inner").css("font-size", "35px")
 // });
 
+// $(function () {
+//     $("h2.head")
+//         .css("background-color", "green")
+//         .find(".inner")
+//         .css("font-size", "35px")
+// })
+
 // 2
-// $(document).ready(function () {
+// $(function () {
 //     $('a[href^="https://"]').attr("target", "_blank");
 // });
 // 3
