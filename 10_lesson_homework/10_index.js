@@ -23,7 +23,7 @@
 // console.log(name4); // "Bob"
 // console.log(age4); // 26
 
-// 3 
+// 3
 // function mul(...args) {
 //     const numbers = args.filter(arg => typeof arg === "number");
 //     return numbers.length ? numbers.reduce((acc, curr) => acc * curr) : 0;
@@ -71,7 +71,7 @@
 // let map = mapBuilder(keys, values);
 // console.log(map.size);
 // console.log(map.get(2));
-
+    
 // 6
 
 // let arr = [];
