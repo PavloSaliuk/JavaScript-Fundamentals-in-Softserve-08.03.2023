@@ -23,7 +23,7 @@
 // 4
 
 // const $checkboxes = $("input[type='checkbox']");
-// $checkboxes.change(function () {
+// $checkboxes.change(() => {
 //     const $checked_checkboxes = $checkboxes.filter(":checked");
 //     if ($checked_checkboxes.length >= 3) {
 //         $checkboxes.prop("disabled", true)
