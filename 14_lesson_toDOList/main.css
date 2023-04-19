@@ -57,10 +57,6 @@ h4 {
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-/* .title {
-    display: flex;
-    justify-content: center;
-} */
 
 .greeting .title {
     display: flex;
@@ -78,10 +74,6 @@ h4 {
     font-size: 1.5rem;
     font-weight: 700;
 }
-/* .clock {
-    display: flex;
-    justify-content: center;
-} */
 
 .create-todo input[type="text"] {
     display: block;
@@ -97,7 +89,6 @@ h4 {
 
 .create-todo .options {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     margin-bottom: 1.5rem;
@@ -187,7 +178,6 @@ input:checked ~ .bubble::after {
     opacity: 1;
 }
 .create-todo .options label div {
-    /* color: var(--dark); */
     font-size: 1.125rem;
     margin-top: 1rem;
 }
