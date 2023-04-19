@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <title> My todo list</title>
+</head>
+
+<body>
+    <main class="app">
+
+        <section class="greeting">
+            <h2 class="title">
+                My name is  <input type="text" id="name" placeholder="Name here">
+            </h2>
+            <div class="clock"></div>
+        </section>
+        
+        <section class="create-todo">
+            <!-- <div>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Ukraine">
+                    <option value="Poland">
+                    <option value="Moldova">
+                    <option value="USA">
+                    <option value="Germany">
+                    <option value="Hungary">
+                    <option value="Italy">
+                    <option value="Finland">
+                    <option value="Austria">
+                    <option value="Montenegro">
+                    <option value="Slovakia">
+                    <option value="Portugal">
+                    <option value="Sweden">
+                    <option value="United Kingdom">
+                </datalist>
+            </div> -->
+            <!-- <h3>To do list</h3> -->
+
+            <form id="new-todo-form">
+                <h4>Make a task</h4>
+                <input type="text" name="content" id="content" placeholder="Write a task">
+
+                <h4>Category of task</h4>
+                <div class="options">
+
+                    <label class="option1">
+                        <input type="radio" name="category" id="category1" value="business">
+                        <span class="bubble business"></span>
+                        <span class="option_text1">Study</span>
+                    </label>
+                    <label class="option2">
+                        <input type="radio" name="category" id="category2" value="personal">
+                        <span class="bubble personal"></span>
+                        <span class="option_text2">Rest</span>
+                    </label>
+                    <label class="option3">
+                        <input type="radio" name="category" id="category3" value="family">
+                        <span class="bubble family"></span>
+                        <span class="option_text3">Family</span>
+                    </label>
+                    <label class="option4">
+                        <input type="radio" name="category" id="category4" value="work">
+                        <span class="bubble work"></span>
+                        <span class="option_text4">Work</span>
+                    </label>
+
+                </div>
+                <input type="submit" value="I can do it!">
+            </form>
+        </section>
+        <section class="todo-list">
+            <h3>You can do it!</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble business"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Make a homework" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Go to sport" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble family"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Go for a walk" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

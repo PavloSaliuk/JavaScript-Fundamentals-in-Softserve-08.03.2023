@@ -1,6 +1,6 @@
 // 1 
 // function getPromise(message, delay) {
-//     return new Promise((resolve, reject) => {
+//     return new Promise((resolve) => {
 //         setTimeout(() => {
 //             resolve(message);
 //         }, delay);
@@ -75,6 +75,6 @@
 // async function showNumbers() {
 //     for (let i = 0; i <= 10; i++) {
 //         console.log(await delay(i, Math.random() * 3000));
-//     } // your code with using delay(i, time)
+//     } 
 // }
 // showNumbers();
