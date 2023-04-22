@@ -3,7 +3,7 @@
     --business: #ff0000;
     --personal: var(--primary);
     --family: #0000ff;
-    --work: rgb(201, 201, 0);
+    --work: #ffbb00;
     --light: #eee;
     --grey: #888;
     --dark: #313154;
@@ -21,7 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 input:not([type="radio"]):not([type="checkbox"]),
@@ -105,8 +105,8 @@ h4 {
     cursor: pointer;
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
     display: none;
 }
 
@@ -135,7 +135,7 @@ input[type='checkbox'] {
 }
 
 .bubble::after {
-    content: '';
+    content: "";
     display: block;
     opacity: 0;
     width: 0;
@@ -166,10 +166,10 @@ input[type='checkbox'] {
     color: green;
 }
 .option_text3 {
-    color: blue;
+    color: var(--family);
 }
 .option_text4 {
-    color: yellow;
+    color: var(--work);
 }
 
 input:checked ~ .bubble::after {
@@ -182,7 +182,7 @@ input:checked ~ .bubble::after {
     margin-top: 1rem;
 }
 
-.create-todo input[type='submit'] {
+.create-todo input[type="submit"] {
     display: block;
     width: 90%;
     font-size: 1.125rem;
@@ -197,7 +197,7 @@ input:checked ~ .bubble::after {
     margin-left: 20px;
 }
 
-.create-todo input[type='submit']:hover {
+.create-todo input[type="submit"]:hover {
     opacity: 0.75;
 }
 
@@ -228,7 +228,8 @@ input:checked ~ .bubble::after {
 .todo-item .todo-content input {
     width: 90%;
     color: var(--dark);
-    font-size: 1.125rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .todo-item .actions {
@@ -253,15 +254,25 @@ input:checked ~ .bubble::after {
     background-color: var(--primary);
 }
 
-.todo-item .actions .delete {  
+.todo-item .actions .delete {
     background-color: var(--danger);
 }
 
 .todo-item.done .todo-content input {
     text-decoration: line-through;
     color: var(--danger);
-    border: 1px solid red ;
+    border: 1px dashed var(--personal);
 }
 .clock {
     font-size: 25px;
+}
+
+.delete-all {
+    background-color: var(--business);
+    padding: 10px;
+    font-size: 14x;
+    font-weight: bold;
+    color: var(--light);
+    border-radius: 0.25em;
+    cursor: pointer;
 }

@@ -11,16 +11,16 @@
     <title> My todo list</title>
 </head>
 
-<body>
+<body">
     <main class="app">
 
         <section class="greeting">
             <h2 class="title">
-                My name is  <input type="text" id="name" placeholder="Name here">
+                My name is <input type="text" id="name" placeholder="Name here">
             </h2>
             <div class="clock"></div>
         </section>
-        
+
         <section class="create-todo">
             <form id="new-todo-form">
                 <h4>Make a task</h4>
@@ -56,13 +56,25 @@
         </section>
         <section class="todo-list">
             <h3>You can do it!</h3>
+            <input type="text" id="search-input" placeholder="Search by name">
+            <input type="text" id="search-input" placeholder="Search by category of task">
+            <input type="text" id="search-input" placeholder="Search by date">
+            <select>
+                <option value="option1">Choose list</option>
+                <option value="option2">Study</option>
+                <option value="option3">Rest</option>
+                <option value="option4">Family</option>
+                <option value="option5">Work</option>
+            </select>
+            <button class="delete-all">Delete all</button>
             <div class="list" id="todo-list">
             </div>
         </section>
 
     </main>
 
-    <script src="main.js"></script>
-</body>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/clock.js" type="module"></script>
+    </body>
 
 </html>
