@@ -270,7 +270,7 @@ input:checked ~ .bubble::after {
 .delete-all {
     background-color: var(--business);
     padding: 10px;
-    font-size: 14x;
+    font-size: 14px;
     font-weight: bold;
     color: var(--light);
     border-radius: 0.25em;
