@@ -184,9 +184,9 @@ input:checked ~ .bubble::after {
 
 .create-todo input[type="submit"] {
     display: block;
-    width: 90%;
+    width: 80%;
     font-size: 1.125rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem ;
     color: #fff;
     text-transform: uppercase;
     background-color: var(--primary);
@@ -194,7 +194,8 @@ input:checked ~ .bubble::after {
     box-shadow: var(--personal-glow);
     cursor: pointer;
     transition: 0.2s ease-out;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .create-todo input[type="submit"]:hover {
@@ -226,6 +227,11 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .todo-content input {
+    position: relative;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
     width: 90%;
     color: var(--dark);
     font-size: 1.2rem;
@@ -265,6 +271,8 @@ input:checked ~ .bubble::after {
 }
 .clock {
     font-size: 25px;
+    width: 80%;
+    font-weight: bold;
 }
 
 .delete-all {
@@ -275,4 +283,24 @@ input:checked ~ .bubble::after {
     color: var(--light);
     border-radius: 0.25em;
     cursor: pointer;
+}
+.animation-motivation {
+    width: 80%;
+    font-weight: bold;
+    position: relative;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 20%;
+    }
+    80% {
+        left: 0%;
+    }
 }
